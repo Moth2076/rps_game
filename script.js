@@ -12,3 +12,17 @@ function getHumanChoice(){
 
 let computerScore = 0;
 let humanScore = 0;
+
+function playRound(){
+    const human = getHumanChoice();
+    const computer = getComputerChoice();
+
+    // human win conditions
+    if ((human === "rock" && computer === "scissors") || (human === "paper" && computer === "rock") || (human === "scissors" && computer === "paper")){
+        console.log("You win!, " + human + " beats " + computer);
+    }
+    else if ((computer === "rock" && human === "scissors") || (computer === "paper" && human === "rock") || (computer === "scissors" && human === "paper")){
+        console.log("You lose!, " + computer + " beats " + human);
+    }
+    else console.log("Draw!");
+}
