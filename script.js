@@ -5,3 +5,7 @@ function getComputerChoice(){
     else if (n == 1) return "Paper"
     return "Scissors"
 }
+
+function getHumanChoice(){
+    return prompt("Your choice? ")
+}
