@@ -19,10 +19,9 @@ function playRound(){
 
     // human win conditions
     if ((human === "rock" && computer === "scissors") || (human === "paper" && computer === "rock") || (human === "scissors" && computer === "paper")){
-        console.log("You win!, " + human + " beats " + computer);
+        humanScore++;
     }
     else if ((computer === "rock" && human === "scissors") || (computer === "paper" && human === "rock") || (computer === "scissors" && human === "paper")){
-        console.log("You lose!, " + computer + " beats " + human);
+        computerScore++;
     }
-    else console.log("Draw!");
 }
