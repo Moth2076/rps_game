@@ -9,3 +9,6 @@ function getComputerChoice(){
 function getHumanChoice(){
     return prompt("Your choice? ").toLowerCase();
 }
+
+let computerScore = 0;
+let humanScore = 0;
