@@ -34,7 +34,7 @@ function playGame(){
         playRound();
     }
     console.log("Final result: ");
-    if (humanScore > computerScore) console.log("You won with " + humanScore + " pts");
-    else if (computerScore > humanScore) console.log("You lost with " + humanScore + " pts");
+    if (humanScore > computerScore) console.log("You won! Score: " + humanScore + " / 5");
+    else if (computerScore > humanScore) console.log("You lost! Score: " + humanScore + " / 5");
     else console.log("Its a draw");
 }
